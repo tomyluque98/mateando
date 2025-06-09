@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mateando S.A.</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>Mateando S.A.</h1>
+    <p>Pasión por el mate, amor por la tradición</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#clientes">Clientes</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home">
+      <h2>Quiénes somos</h2>
+      <p>Mateando S.A. es una empresa dedicada a la venta de mates personalizados, bombillas, termos y todo lo necesario para disfrutar un buen mate.</p>
+    </section>
+
+    <section id="nosotros">
+      <h2>Nuestro equipo</h2>
+      <p>Somos un grupo de amigos apasionados por el mate y la cultura argentina, comprometidos con ofrecer productos únicos y de calidad.</p>
+    </section>
+
+    <section id="clientes">
+      <h2>Clientes felices</h2>
+      <ul>
+        <li>Yerba Buena Corp.</li>
+        <li>TermoKing</li>
+        <li>MateArte</li>
+      </ul>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form id="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" required>
+
+        <label for="origen">¿Cómo te enteraste de nuestra empresa?</label>
+        <select id="origen">
+          <option value="">Seleccioná una opción</option>
+          <option value="redes">Redes</option>
+          <option value="comentarios">Comentarios</option>
+          <option value="otro">Otro</option>
+        </select>
+
+        <div id="especifique-container" style="display: none;">
+          <label for="especifique">Especifique:</label>
+          <textarea id="especifique"></textarea>
+        </div>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mateando S.A. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
